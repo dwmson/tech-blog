@@ -1,0 +1,398 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: "
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Building My Blog with Hugo, Supabase, and GitHub Pages - My New Hugo Site</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Introduction
+I wanted to build a personal tech blog that is fast, easy to manage, and free to host. I chose Hugo as my static site generator, Supabase Storage as a CDN for images and other assets, and GitHub Pages for hosting.
+This post walks through the steps to set up a Hugo blog, use Supabase for images, and deploy it to GitHub Pages.
+
+1. Setting Up Hugo Locally
+First, install Hugo:" />
+  <meta name="author" content="My New Hugo Site" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.144.2">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >My New Hugo Site</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = ''.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Building My Blog with Hugo, Supabase, and GitHub Pages</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Feb 22, 2025</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="introduction">Introduction</h2>
+<p>I wanted to build a personal tech blog that is <strong>fast, easy to manage, and free to host</strong>. I chose <strong>Hugo</strong> as my static site generator, <strong>Supabase Storage</strong> as a CDN for images and other assets, and <strong>GitHub Pages</strong> for hosting.</p>
+<p>This post walks through the steps to <strong>set up a Hugo blog, use Supabase for images, and deploy it to GitHub Pages</strong>.</p>
+<hr>
+<h2 id="1-setting-up-hugo-locally">1. Setting Up Hugo Locally</h2>
+<p>First, install <strong>Hugo</strong>:</p>
+<h3 id="mac-homebrew"><strong>Mac (Homebrew):</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div><h3 id="windows-chocolatey"><strong>Windows (Chocolatey):</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install hugo
+</span></span></code></pre></div><h3 id="linux-ubuntudebian"><strong>Linux (Ubuntu/Debian):</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install hugo
+</span></span></code></pre></div><h3 id="create-a-new-hugo-site"><strong>Create a New Hugo Site:</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site my-tech-blog
+</span></span><span style="display:flex;"><span>cd my-tech-blog
+</span></span></code></pre></div><h3 id="install-a-theme-paper-theme-example"><strong>Install a Theme (Paper Theme Example):</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/nanxiaobei/hugo-paper themes/hugo-paper
+</span></span></code></pre></div><p>Edit <code>config.toml</code> to use the theme:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-paper&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My Tech Blog&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://localhost:1313/&#34;</span>
+</span></span></code></pre></div><p>Run the server locally:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>Now, visit <strong>http://localhost:1313/</strong> to see your blog! 🎉</p>
+<hr>
+<h2 id="2-using-supabase-as-a-cdn-for-images">2. Using Supabase as a CDN for Images</h2>
+<p>Since Hugo generates static files, we need a way to host images and assets. <strong>Supabase Storage</strong> provides a CDN, making it easy to store and serve images.</p>
+<h3 id="steps-to-upload-images-to-supabase"><strong>Steps to Upload Images to Supabase:</strong></h3>
+<ol>
+<li><strong>Sign up</strong> at <a href="https://supabase.io/">Supabase</a> and create a project.</li>
+<li>Go to <strong>Storage</strong> → Create a <strong>bucket</strong> (<code>blog-images</code>).</li>
+<li>Upload an image (e.g., <code>pi-setup.jpg</code>).</li>
+<li>Click the image → Copy the <strong>public URL</strong>.</li>
+</ol>
+<h3 id="embed-images-in-a-hugo-post"><strong>Embed Images in a Hugo Post:</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">My Raspberry Pi Setup</span>](<span style="color:#a6e22e">https://xyz.supabase.co/storage/v1/object/public/blog-images/pi-setup.jpg</span>)
+</span></span></code></pre></div><p>This makes images load <strong>fast</strong> without increasing your site&rsquo;s size. 🚀</p>
+<hr>
+<h2 id="3-deploying-hugo-blog-to-github-pages">3. Deploying Hugo Blog to GitHub Pages</h2>
+<p>Now that our blog is working locally, let’s <strong>deploy it to GitHub Pages</strong>.</p>
+<h3 id="step-1-create-a-github-repository"><strong>Step 1: Create a GitHub Repository</strong></h3>
+<p>Go to GitHub and create a new repository (e.g., <code>my-blog</code>).</p>
+<h3 id="step-2-push-your-hugo-site-to-github"><strong>Step 2: Push Your Hugo Site to GitHub</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Initial commit&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git remote add origin https://github.com/&lt;your-username&gt;/my-blog.git
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><h3 id="step-3-enable-github-pages"><strong>Step 3: Enable GitHub Pages</strong></h3>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Pages</strong>.</li>
+<li>Under <strong>Source</strong>, select <code>Deploy from a branch</code>.</li>
+<li>Choose <code>main</code> branch and click <strong>Save</strong>.</li>
+<li>Your blog will be live at:
+<pre tabindex="0"><code>https://&lt;your-github-username&gt;.github.io/my-blog/
+</code></pre></li>
+</ol>
+<p>🎉 <strong>Your Hugo blog is now hosted for free on GitHub Pages!</strong></p>
+<hr>
+<h2 id="4-automating-deployment-github-actions---optional">4. Automating Deployment (GitHub Actions - Optional)</h2>
+<p>To <strong>automate Hugo builds and deployments</strong>, set up <strong>GitHub Actions</strong>:</p>
+<ol>
+<li>Create <code>.github/workflows/deploy.yml</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy Hugo Site</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">main</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v3</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-hugo@v2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">hugo-version</span>: <span style="color:#e6db74">&#39;latest&#39;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">run</span>: <span style="color:#ae81ff">hugo --minify</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-gh-pages@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">github_token</span>: <span style="color:#ae81ff">${{ secrets.GITHUB_TOKEN }}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">publish_dir</span>: <span style="color:#ae81ff">./public</span>
+</span></span></code></pre></div><p>Now, every time you <strong>push changes to GitHub</strong>, it will rebuild and deploy automatically. 🚀</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>This guide walked through <strong>setting up a Hugo blog, using Supabase for images, and deploying on GitHub Pages</strong>. Now, I can focus on writing without worrying about hosting costs or performance issues.</p>
+<p>💡 <strong>Next Steps:</strong></p>
+<ul>
+<li><strong>Customize the blog theme</strong> (modify colors, layouts, fonts).</li>
+<li><strong>Set up a custom domain</strong> instead of <code>github.io</code>.</li>
+<li><strong>Add a &ldquo;Projects&rdquo; page</strong> showcasing GitHub repositories.</li>
+</ul>
+<p>Hope this helps others looking to build a tech blog! 🚀</p>
+<hr>
+<p>Got questions? Let me know in the comments or <a href="https://github.com/your-username">reach out on GitHub</a>. Happy blogging! 😊</p>
+</section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/hugo"
+      >Hugo</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/supabase"
+      >Supabase</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/github-pages"
+      >GitHub Pages</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/cdn"
+      >CDN</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/static-site"
+      >Static Site</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2025
+    <a class="link" href="http://localhost:1313/">My New Hugo Site</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>
