@@ -1,4 +1,4 @@
-baseURL = 'https://dwmson.github.io/tech-blog/'
+baseURL = 'https://dwmson.github.io/tech-blog/public/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'hugo-paper'

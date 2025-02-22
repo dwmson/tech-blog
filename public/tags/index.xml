@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My New Hugo Site</title>
-    <link>http://localhost:1313/tech-blog/tags/</link>
+    <link>http://localhost:1313/tech-blog/public/tags/</link>
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tech-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tech-blog/public/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CDN</title>
-      <link>http://localhost:1313/tech-blog/tags/cdn/</link>
+      <link>http://localhost:1313/tech-blog/public/tags/cdn/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech-blog/tags/cdn/</guid>
+      <guid>http://localhost:1313/tech-blog/public/tags/cdn/</guid>
       <description></description>
     </item>
     <item>
       <title>GitHub Pages</title>
-      <link>http://localhost:1313/tech-blog/tags/github-pages/</link>
+      <link>http://localhost:1313/tech-blog/public/tags/github-pages/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech-blog/tags/github-pages/</guid>
+      <guid>http://localhost:1313/tech-blog/public/tags/github-pages/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/tech-blog/tags/hugo/</link>
+      <link>http://localhost:1313/tech-blog/public/tags/hugo/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech-blog/tags/hugo/</guid>
+      <guid>http://localhost:1313/tech-blog/public/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Static Site</title>
-      <link>http://localhost:1313/tech-blog/tags/static-site/</link>
+      <link>http://localhost:1313/tech-blog/public/tags/static-site/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech-blog/tags/static-site/</guid>
+      <guid>http://localhost:1313/tech-blog/public/tags/static-site/</guid>
       <description></description>
     </item>
     <item>
       <title>Supabase</title>
-      <link>http://localhost:1313/tech-blog/tags/supabase/</link>
+      <link>http://localhost:1313/tech-blog/public/tags/supabase/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech-blog/tags/supabase/</guid>
+      <guid>http://localhost:1313/tech-blog/public/tags/supabase/</guid>
       <description></description>
     </item>
   </channel>
