@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Supabase on My New Hugo Site</title>
-    <link>http://localhost:1313/tech-blog/tags/supabase/</link>
+    <link>https://dwmson.github.io/tech-blog/tags/supabase/</link>
     <description>Recent content in Supabase on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tech-blog/tags/supabase/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dwmson.github.io/tech-blog/tags/supabase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building My Blog with Hugo, Supabase, and GitHub Pages</title>
-      <link>http://localhost:1313/tech-blog/posts/my-first-post/</link>
+      <link>https://dwmson.github.io/tech-blog/posts/my-first-post/</link>
       <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech-blog/posts/my-first-post/</guid>
+      <guid>https://dwmson.github.io/tech-blog/posts/my-first-post/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;I wanted to build a personal tech blog that is &lt;strong&gt;fast, easy to manage, and free to host&lt;/strong&gt;. I chose &lt;strong&gt;Hugo&lt;/strong&gt; as my static site generator, &lt;strong&gt;Supabase Storage&lt;/strong&gt; as a CDN for images and other assets, and &lt;strong&gt;GitHub Pages&lt;/strong&gt; for hosting.&lt;/p&gt;&#xA;&lt;p&gt;This post walks through the steps to &lt;strong&gt;set up a Hugo blog, use Supabase for images, and deploy it to GitHub Pages&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-setting-up-hugo-locally&#34;&gt;1. Setting Up Hugo Locally&lt;/h2&gt;&#xA;&lt;p&gt;First, install &lt;strong&gt;Hugo&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
   </channel>

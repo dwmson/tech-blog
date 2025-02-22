@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tech-blog/posts/my-first-post/</loc>
+    <loc>https://dwmson.github.io/tech-blog/posts/my-first-post/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/tags/cdn/</loc>
+    <loc>https://dwmson.github.io/tech-blog/tags/cdn/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/tags/github-pages/</loc>
+    <loc>https://dwmson.github.io/tech-blog/tags/github-pages/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/tags/hugo/</loc>
+    <loc>https://dwmson.github.io/tech-blog/tags/hugo/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/</loc>
+    <loc>https://dwmson.github.io/tech-blog/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/posts/</loc>
+    <loc>https://dwmson.github.io/tech-blog/posts/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/tags/static-site/</loc>
+    <loc>https://dwmson.github.io/tech-blog/tags/static-site/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/tags/supabase/</loc>
+    <loc>https://dwmson.github.io/tech-blog/tags/supabase/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/tags/</loc>
+    <loc>https://dwmson.github.io/tech-blog/tags/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tech-blog/categories/</loc>
+    <loc>https://dwmson.github.io/tech-blog/categories/</loc>
   </url>
 </urlset>
